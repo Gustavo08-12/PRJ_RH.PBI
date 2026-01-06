@@ -2,43 +2,33 @@
 
 Este repositório contém o ficheiro de projeto do Power BI (`Ex-02.pbix`), desenvolvido para a análise de dados e visualização de indicadores chave de desempenho (KPIs).
 
+
 ## 📊 Visão Geral do Relatório
 
-O objetivo deste painel é fornecer insights sobre **[Insira aqui o tema, ex: Vendas, Recursos Humanos, Financeiro]**, permitindo a análise de tendências e o apoio à tomada de decisão.
+O objetivo deste painel é fornecer insights sobre **Recursos Humanos**, permitindo a análise de tendências e o apoio à tomada de decisão.
 
 **Principais funcionalidades:**
 * Navegação interativa entre páginas.
-* Filtros dinâmicos por **[ex: Período, Região, Categoria]**.
-* Análise comparativa (**[ex: Ano Atual vs Ano Anterior]**).
+* Filtros dinâmicos por **Gênero, Salários e Funções**.
+* Análise comparativa.
+
 
 ## 💾 Fontes de Dados
 
 O relatório é alimentado pelas seguintes fontes:
 
-* **Excel / CSV:** `[Nome do ficheiro.xlsx]` (Dados de transações).
-* **Base de Dados:** `[SQL Server / Web / SharePoint]` (Tabelas de dimensão).
-* **Tabelas Calculadas:** Tabelas auxiliares criadas em DAX (ex: Tabela dCalendario).
+* **Excel / CSV:** `SALARIOS.xlsx` (Dados de transações).
 
-## 🗂 Estrutura do Modelo de Dados
-
-O modelo de dados segue o esquema **Star Schema** (Estrela) para otimização de performance:
-
-### Tabelas de Factos (f)
-* `fVendas` (ou o nome da tua tabela principal): Contém os registos históricos e valores transacionais.
-
-### Tabelas de Dimensão (d)
-* `dProduto`: Cadastro e detalhes dos itens.
-* `dCliente`: Segmentação e localização dos clientes.
-* `dCalendario`: Datas para inteligência temporal (Time Intelligence).
 
 ## 📈 Principais Métricas (DAX)
 
 As principais medidas calculadas incluem:
 
-1.  **Total de Vendas:** Soma do valor faturado.
-2.  **Ticket Médio:** `Total de Vendas / Contagem de Pedidos`.
-3.  **Variação YoY (%):** Comparativo com o mesmo período do ano anterior.
-4.  **Margem de Lucro:** `(Receita - Custo) / Receita`.
+1.  **Total de Salários:** Soma dos salários dos funcionários.
+2.  **Total de Faltas:** Soma da quantidade de faltas dos funcionários.
+3.  **Func.:** Especificação entre funcionários.
+4.  **Localidade:** Estados em que as filias estão presentes.
+
 
 ## 🛠 Pré-requisitos e Como Executar
 
